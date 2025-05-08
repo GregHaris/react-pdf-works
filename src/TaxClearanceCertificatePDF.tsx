@@ -13,25 +13,35 @@ const TaxClearanceCertificate: React.FC<{
         <Image src="/assets/aks_logo.png" style={styles.logo} />
       </View>
 
+      {/* Header */}
+      <View style={styles.headerContainer}>
+        <Text style={styles.header}>
+          Akwa Ibom State Government Internal Revenue Service
+        </Text>
+      </View>
+
       {/* Background Image */}
       <View style={styles.backgroundImageContainer}>
         <Image src="/assets/akirs_logo.png" style={styles.backgroundImage} />
       </View>
 
-      {/* Header */}
-      <Text style={styles.header}>AKWA IBOM STATE GOVERNMENT</Text>
-      <Text style={styles.header}>INTERNAL REVENUE SERVICE</Text>
-      <Text style={styles.serialNumber}>SN: {data.serialNumber}</Text>
-
       {/* Form Details */}
       <View style={styles.formRow}>
         <View>
-          <Text style={styles.formLabel}>The Form I.T. 70</Text>
-          <Text style={styles.formLabel}>Station: {data.station}</Text>
+          <Text style={styles.formLabel}>
+            TIN: <Text style={styles.small}>{data.tin}</Text>
+          </Text>
+          <Text style={styles.formLabel}>
+            NIN: <Text style={styles.small}>{data.nin}</Text>
+          </Text>
         </View>
         <View>
-          <Text style={styles.formLabel}>File No. {data.fileNumber}</Text>
-          <Text style={styles.formLabel}>Date: {data.date}</Text>
+          <Text style={styles.formLabel}>
+            Tax Office. <Text style={styles.small}>{data.taxOffice}</Text>
+          </Text>
+          <Text style={styles.formLabel}>
+            Date of Issue: <Text style={styles.small}>{data.issuanceDate}</Text>
+          </Text>
         </View>
       </View>
 
@@ -46,8 +56,9 @@ const TaxClearanceCertificate: React.FC<{
       {/* Certification Statement */}
       <View style={styles.section}>
         <Text>
-          <Text style={styles.italics}>Chief/Alhaji/Mr/Mrs/Miss</Text> {data.name} of {data.address} has settled
-          his/her income tax assessments for the past three years, namely:
+          <Text style={styles.italics}>Chief/Alhaji/Mr/Mrs/Miss</Text>{' '}
+          {data.name} of {data.address} has settled his/her income tax
+          assessments for the past three years, namely:
         </Text>
         <Text style={{ marginTop: 5 }}>
           ( {data.years[0] || '20__'} / {data.years[1] || '20__'} /{' '}

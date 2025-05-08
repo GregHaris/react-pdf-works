@@ -1,10 +1,10 @@
 import type { TaxClearanceCertificateData } from "./types";
 
 export const dummyData: TaxClearanceCertificateData = {
-  serialNumber: '01177',
-  station: 'UYO HOTRS',
-  fileNumber: 'AKS/IRS/134',
-  date: '30-01-2025',
+  nin: '01172454547',
+  taxOffice: 'UYO HOTRS',
+  tin: 'AKS/IRS/134',
+  issuanceDate: '30-01-2025',
   name: 'MICHAEL ETEFIA',
   address: 'MYKE ETEFIA & CO PLOT 36 F LINE EWET HOUSING EST. UYO',
   years: ['2022', '2023', '2024'],

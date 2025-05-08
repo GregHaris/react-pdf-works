@@ -24,8 +24,9 @@ export const styles = StyleSheet.create({
     marginRight: 'auto',
   },
   logoContainer: {
-    width: 100,
-    height: 100,
+    width: 55,
+    height: 55,
+    paddingBottom: 4,
     marginLeft: 'auto',
     marginRight: 'auto',
   },
@@ -36,11 +37,20 @@ export const styles = StyleSheet.create({
     marginLeft: 'auto',
     marginRight: 'auto',
   },
+
+  headerContainer: {
+    marginHorizontal: 'auto',
+    width: 240,
+    textAlign: 'center',
+    fontSize: 16,
+    fontWeight: 'bold',
+    marginBottom: 20,
+  },
+  
   header: {
     textAlign: 'center',
     fontSize: 16,
     fontWeight: 'bold',
-    marginBottom: 10,
   },
   subHeader: {
     textAlign: 'center',
@@ -58,7 +68,7 @@ export const styles = StyleSheet.create({
   formRow: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    marginBottom: 10,
+    marginBottom: 20,
     color: '#606060',
   },
   formLabel: {

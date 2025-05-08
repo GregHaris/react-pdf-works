@@ -1,8 +1,8 @@
 export interface TaxClearanceCertificateData {
-  serialNumber: string;
-  station: string;
-  fileNumber: string;
-  date: string;
+  tin: string;
+  nin: string;
+  taxOffice: string;
+  issuanceDate: string;
   name: string;
   address: string;
   years: string[];
